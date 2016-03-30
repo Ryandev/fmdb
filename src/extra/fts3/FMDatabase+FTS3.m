@@ -8,7 +8,13 @@
 
 #import "FMDatabase+FTS3.h"
 #import "fts3_tokenizer.h"
-#include "sqlite3.h"
+
+#if FMDB_SQLITE_STANDALONE
+#import <sqlite3/sqlite3.h>
+#else
+#import <sqlite3.h>
+#endif
+
 NSString *const kFTSCommandOptimize = @"optimize";
 NSString *const kFTSCommandRebuild  = @"rebuild";
 NSString *const kFTSCommandIntegrityCheck = @"integrity-check";
