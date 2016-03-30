@@ -1,6 +1,6 @@
-# FMDB v2.6.2
+# FMDB v2.6.3 (fork)
 
-This is an Objective-C wrapper around SQLite: http://sqlite.org/
+This is an Objective-C wrapper around SQLite carthage framework: https://github.com/Ryandev/SQLite-iOS
 
 ## The FMDB Mailing List:
 http://groups.google.com/group/fmdb
